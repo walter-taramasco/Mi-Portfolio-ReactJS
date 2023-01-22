@@ -3,7 +3,7 @@ import "./AboutMe.scss";
 
 import { FaSass, FaReact } from "react-icons/fa";
 
-export function AboutMe() {
+const AboutMe = () => {
   return (
     <>
       <section className="container__section sobremi">
@@ -41,4 +41,6 @@ export function AboutMe() {
       </section>
     </>
   );
-}
+};
+
+export default AboutMe;

@@ -4,7 +4,7 @@ import "./Header.scss";
 import { RiMenu3Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 
-export function Header() {
+const Header = () => {
   // Obtengo el valor del scrollY y con eso trabajo los eventos con el menú y
   // el botón para volver hacia arriba de la página
   const header = document.querySelector(".header");
@@ -85,4 +85,6 @@ export function Header() {
       </header>
     </>
   );
-}
+};
+
+export default Header;

@@ -3,7 +3,7 @@ import "./Home.scss";
 
 import { BiDownload, BiMessageDots } from "react-icons/bi";
 
-export function Home() {
+const Home = () => {
   function redireccionarSeccionContacto() {
     let seccionContacto = document.querySelector(".contacto");
     // Redireccionar a la sección que corresponde
@@ -44,4 +44,6 @@ export function Home() {
       </section>
     </>
   );
-}
+};
+
+export default Home;

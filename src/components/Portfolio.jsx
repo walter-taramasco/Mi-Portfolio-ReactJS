@@ -43,7 +43,7 @@ const Proyecto = ({
   );
 };
 
-export function Portfolio() {
+const Portfolio = () => {
   return (
     <>
       <section className="container__section portafolio">
@@ -70,4 +70,6 @@ export function Portfolio() {
       </section>
     </>
   );
-}
+};
+
+export default Portfolio;

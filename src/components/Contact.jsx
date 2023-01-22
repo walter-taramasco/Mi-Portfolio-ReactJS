@@ -7,7 +7,7 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 
-export function Contact() {
+const Contact = () => {
   return (
     <>
       <section className="container__section contacto">
@@ -37,4 +37,6 @@ export function Contact() {
       </section>
     </>
   );
-}
+};
+
+export default Contact;

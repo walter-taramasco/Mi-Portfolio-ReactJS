@@ -3,7 +3,7 @@ import "./ButtonUp.scss";
 
 import { RxCaretUp } from "react-icons/rx";
 
-export function ButtonUp() {
+const ButtonUp = () => {
   window.onscroll = function () {
     var botonUp = document.querySelector(".div__up");
     var movimientoScrollY = window.scrollY;
@@ -24,4 +24,6 @@ export function ButtonUp() {
       </div>
     </>
   );
-}
+};
+
+export default ButtonUp;
