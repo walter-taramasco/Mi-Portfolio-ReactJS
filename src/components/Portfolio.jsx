@@ -46,7 +46,7 @@ const Proyecto = ({
 const Portfolio = () => {
   return (
     <>
-      <section className="container__section portafolio">
+      <section className="container__section portafolio" id="proyectos">
         <h4 className="portafolio__h4">PROYECTOS</h4>
         <div className="portafolio__div proyecto">
           <Proyecto

@@ -10,9 +10,6 @@ const Header = () => {
   var header = document.querySelector(".header");
   var headerUl = document.querySelector(".header__ul");
   var closeIcono = document.querySelector(".close__icono");
-  var seccionProyectos = document.querySelector(".portafolio");
-  var seccionSobreMi = document.querySelector(".sobremi");
-  var seccionContacto = document.querySelector(".contacto");
 
   window.onscroll = function () {
     var movimientoScrollY = window.scrollY;
@@ -36,25 +33,6 @@ const Header = () => {
     headerUl.style.transition = "all 0.3s ease-in-out";
   }
 
-  // Si algún <li> es clickeado que se cierre el menú
-  function liProyectosClose() {
-    // Redireccionar a la sección que corresponde
-    seccionProyectos.scrollIntoView({ block: "center", behavior: "smooth" });
-    cerrarMenu();
-  }
-
-  function liSobreMiClose() {
-    // Redireccionar a la sección que corresponde
-    seccionSobreMi.scrollIntoView({ block: "center", behavior: "smooth" });
-    cerrarMenu();
-  }
-
-  function liContactoClose() {
-    // Redireccionar a la sección que corresponde
-    seccionContacto.scrollIntoView({ block: "center", behavior: "smooth" });
-    cerrarMenu();
-  }
-
   return (
     <>
       <header className="header">
@@ -65,17 +43,17 @@ const Header = () => {
             className="header__img"
           />
           <ul className="header__ul">
-            <li className="header__li" onClick={liProyectosClose}>
-              PROYECTOS
-            </li>
-            <li className="header__li" onClick={liSobreMiClose}>
-              SOBRE MÍ
-            </li>
-            <li className="header__li" onClick={liContactoClose}>
-              CONTACTO
-            </li>
+            <a href="#proyectos">
+              <li className="header__li">PROYECTOS</li>
+            </a>
+            <a href="#sobremi" className="header__a">
+              <li className="header__li">SOBRE MÍ</li>
+            </a>
+            <a href="#contacto">
+              <li className="header__li">CONTACTO</li>
+            </a>
           </ul>
-          <button className="header__button close" onClick={cerrarMenu}>
+          <button className="header__button close">
             <AiOutlineClose className="close__icono" />
           </button>
           <button className="header__button menu" onClick={abrirMenu}>

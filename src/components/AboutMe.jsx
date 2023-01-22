@@ -6,7 +6,7 @@ import { FaSass, FaReact } from "react-icons/fa";
 const AboutMe = () => {
   return (
     <>
-      <section className="container__section sobremi">
+      <section className="container__section sobremi" id="sobremi">
         <div className="sobremi__div">
           <h4 className="sobremi__h4">SOBRE MÍ</h4>
           <p className="sobremi__p">

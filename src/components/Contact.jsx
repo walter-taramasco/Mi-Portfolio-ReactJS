@@ -10,7 +10,7 @@ import {
 const Contact = () => {
   return (
     <>
-      <section className="container__section contacto">
+      <section className="container__section contacto" id="contacto">
         <h4 className="contacto__h4">CONTACTO</h4>
         <div className="contacto__div">
           <a
