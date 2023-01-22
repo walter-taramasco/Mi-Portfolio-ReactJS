@@ -1,0 +1,111 @@
+/* Container */
+.container {
+  margin: 1.5625rem;
+  &__section {
+    margin: 2.5rem 0;
+  }
+}
+
+/* Inicio */
+.inicio {
+  margin: 5.625rem 0 2.5rem 0;
+  &__img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+  }
+}
+
+.texto {
+  &__div {
+    margin: 0;
+  }
+  &__h3 {
+    margin: 0.8rem 0 0 0;
+    font-size: 1rem;
+  }
+  &__h1 {
+    font-size: 1.6rem;
+    font-family: Montserrat;
+    font-weight: bold;
+  }
+  &__h2 {
+    margin: 0.3rem 0 0 0;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+}
+
+.botones {
+  &__div {
+    margin: 0;
+  }
+  &__a {
+    width: 14em;
+    white-space: nowrap;
+    background-color: var(--color-secundario);
+    margin: 1rem auto 0 auto;
+    padding: 0.6em;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  &__a:hover {
+    opacity: 0.5;
+  }
+  &__a--icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin: 0 0 0.1rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .container__section {
+    margin: 4.375rem 0;
+  }
+  .inicio {
+    margin: 5.625rem 0 !important;
+    &__div {
+      flex-flow: row nowrap !important;
+    }
+    &__img {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+  .texto {
+    &__div {
+      text-align: center;
+      margin: 0 0 0 3.125rem;
+    }
+    &__h3 {
+      margin: 0 0 0.3rem 0;
+      font-size: 1.3rem;
+    }
+    &__h1 {
+      font-size: 1.9rem;
+    }
+    &__h2 {
+      margin: 0.6rem 0 0 0;
+      font-size: 1.6rem;
+    }
+  }
+  .botones {
+  &__div {
+    margin: 1rem 0 0 0;
+    flex-flow: row nowrap !important;
+  }
+  &__a {
+    font-size: 1.2rem;
+    margin: 0 0.6rem 0 0;
+  }
+}
+}
+
+@media screen and (min-width: 1000px) {
+  .inicio {
+    margin: 7rem 0 !important;
+  }
+}

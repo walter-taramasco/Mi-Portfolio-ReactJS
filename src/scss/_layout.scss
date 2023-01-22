@@ -1,0 +1,90 @@
+@mixin fx($dis, $just, $align, $dir, $wrap) {
+  display: $dis;
+  justify-content: $just;
+  align-items: $align;
+  flex-flow: $dir $wrap;
+}
+
+.header {
+  &__div {
+    @include fx(flex, space-between, center, row, nowrap);
+  }
+  &__ul {
+    @include fx(flex, space-evenly, center, column, nowrap);
+  }
+}
+
+.inicio {
+  &__div {
+    @include fx(flex, center, center, column, nowrap);
+  }
+}
+
+.botones {
+  &__div {
+    @include fx(flex, center, center, column, nowrap);
+  }
+  &__a {
+    @include fx(flex, center, center, row, nowrap);
+  }
+}
+
+.portafolio__div {
+  @include fx(flex, center, center, row, wrap);
+}
+
+.proyecto__div {
+  @include fx(flex, center, center, column, nowrap);
+}
+
+.tecnologias {
+  &__div {
+    @include fx(flex, center, center, row, nowrap);
+  }
+  &__span {
+    @include fx(flex, center, center, row, nowrap);
+  }
+}
+
+.links {
+  &__div {
+    @include fx(flex, center, center, row, nowrap);
+  }
+  &__a {
+    @include fx(flex, center, center, row, nowrap);
+  }
+}
+
+.sobremi__div {
+  @include fx(flex, center, center, column, nowrap);
+}
+
+.aprendiendo {
+  @include fx(flex, center, center, column, nowrap);
+  &__div {
+  @include fx(flex, center, center, row, nowrap);
+  }
+}
+
+.tecnologia {
+ &__div {
+  @include fx(flex, center, center, row, nowrap);
+} 
+  &__icono {
+    @include fx(flex, center, center, row, nowrap);
+  }
+}
+
+
+.contacto {
+  &__div {
+    @include fx(flex, center, center, row, nowrap);
+  }
+  &__link {
+    @include fx(flex, center, center, row, nowrap);
+  }
+}
+
+.div__up {
+  @include fx(flex, center, center, row, nowrap);
+}

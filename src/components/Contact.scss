@@ -1,0 +1,35 @@
+/* Contacto */
+.contacto {
+  &__h4 {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+  }
+  &__link {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    font-size: 1.7rem;
+    background-color: var(--color-secundario);
+    border: 0.0625rem solid var(--color-primario);
+    border-radius: 100%;
+    margin: 0 0 0 0.6rem;
+    padding: 0.3125rem;
+    transition: opacity 0.3s ease-in-out;
+  } 
+  &__link:hover {
+    opacity: 0.7;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contacto {
+    &__h4 {
+      font-size: 1.6rem;
+    }
+    &__link {
+      width: 3.125rem;
+      height: 3.125rem;
+    }
+  }
+}

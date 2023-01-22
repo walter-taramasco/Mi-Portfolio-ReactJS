@@ -1,0 +1,40 @@
+
+/* Botón flotante -ir hacia arriba del todo- */
+.div__up {
+  display: flex;
+  position: fixed;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  width: 3rem;
+  height: 3rem;
+  color: #FFF;
+  background-color: #0E2675;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+@media screen and (min-width: 650px) {
+  .div__up {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .div__up {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}

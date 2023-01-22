@@ -1,0 +1,174 @@
+@use "./scss/_layout.scss";
+
+/* Reset CSS */
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;500&family=Montserrat:wght@600;700&display=swap");
+
+:root {
+  --color-primario: #181818;
+  --color-secundario: #f0f0f0;
+
+  --fondo-primario: #314175;
+  --fondo-secundario: #6889f7;
+
+  --fuente-primaria: Hind, Helvetica, Arial, sans-serif;
+  --fuente-secundaria: Montserrat;
+}
+
+/* Modo Oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primario: #f0f0f0;
+    --color-secundario: #181818;
+
+    --fondo-primario: #6889f7;
+    --fondo-secundario: #314175;
+  }
+}
+
+/* Si se activa el modo de alto contraste */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primario: black;
+    --color-secundario: white;
+  }
+}
+
+/* Desactivamos las animaciones por si el visitante ha activado el modo sin
+* animaciones */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Reset de los margin/paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitar problemas con imágenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* Opcional */
+  object-fit: cover;
+  /* Opcional */
+  object-position: center center;
+}
+
+/* Reset de enlaces para funcionar como cajas */
+a {
+  display: block;
+}
+
+/* Excepto los que se encuentren en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos desplazamiento suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  /* Opcional -desactivar ciertos estilos que aplican varios navegadores- appearance: none; */
+}
+
+/* Reset de las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--fuente-primaria);
+  color: var(--color-primario);
+  background-color: var(--fondo-secundario);
+  /* Opcional */
+  line-height: 1.4em;
+  /* Opcional  hyphens: auto; */
+  /* Opcional */
+  font-smooth: always;
+  /* Opcional */
+  -webkit-font-smoothing: antialiased;
+  /* Opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
