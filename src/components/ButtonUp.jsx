@@ -5,7 +5,7 @@ import { RxCaretUp } from "react-icons/rx";
 
 export function ButtonUp() {
   window.onscroll = function () {
-  var botonUp = document.querySelector(".div__up");
+    var botonUp = document.querySelector(".div__up");
     var movimientoScrollY = window.scrollY;
     if (movimientoScrollY >= 5) {
       botonUp.classList.add("visible");

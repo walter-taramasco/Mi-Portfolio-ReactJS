@@ -1,4 +1,3 @@
-
 /* Botón flotante -ir hacia arriba del todo- */
 .div__up {
   display: flex;
@@ -7,8 +6,8 @@
   right: 0.625rem;
   width: 3rem;
   height: 3rem;
-  color: #FFF;
-  background-color: #0E2675;
+  color: #fff;
+  background-color: #0e2675;
   border-radius: 50%;
   font-size: 2.5rem;
   cursor: pointer;
@@ -22,7 +21,7 @@
 
 .visible {
   opacity: 1;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 650px) {

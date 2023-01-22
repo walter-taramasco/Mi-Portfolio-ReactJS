@@ -5,7 +5,7 @@ import { BiDownload, BiMessageDots } from "react-icons/bi";
 
 export function Home() {
   function redireccionarSeccionContacto() {
-  let seccionContacto = document.querySelector(".contacto");
+    let seccionContacto = document.querySelector(".contacto");
     // Redireccionar a la sección que corresponde
     seccionContacto.scrollIntoView({ block: "center", behavior: "smooth" });
   }
@@ -31,7 +31,11 @@ export function Home() {
               >
                 Descarga mi CV <BiDownload className="botones__a--icon" />
               </a>
-              <a className="botones__a contactar-conmigo" title="Contacta conmigo" onClick={redireccionarSeccionContacto}>
+              <a
+                className="botones__a contactar-conmigo"
+                title="Contacta conmigo"
+                onClick={redireccionarSeccionContacto}
+              >
                 Contacta conmigo! <BiMessageDots className="botones__a--icon" />
               </a>
             </div>

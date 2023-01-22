@@ -62,19 +62,18 @@
 .aprendiendo {
   @include fx(flex, center, center, column, nowrap);
   &__div {
-  @include fx(flex, center, center, row, nowrap);
-  }
-}
-
-.tecnologia {
- &__div {
-  @include fx(flex, center, center, row, nowrap);
-} 
-  &__icono {
     @include fx(flex, center, center, row, nowrap);
   }
 }
 
+.tecnologia {
+  &__div {
+    @include fx(flex, center, center, row, nowrap);
+  }
+  &__icono {
+    @include fx(flex, center, center, row, nowrap);
+  }
+}
 
 .contacto {
   &__div {

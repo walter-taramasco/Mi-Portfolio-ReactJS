@@ -93,15 +93,15 @@
     }
   }
   .botones {
-  &__div {
-    margin: 1rem 0 0 0;
-    flex-flow: row nowrap !important;
+    &__div {
+      margin: 1rem 0 0 0;
+      flex-flow: row nowrap !important;
+    }
+    &__a {
+      font-size: 1.2rem;
+      margin: 0 0.6rem 0 0;
+    }
   }
-  &__a {
-    font-size: 1.2rem;
-    margin: 0 0.6rem 0 0;
-  }
-}
 }
 
 @media screen and (min-width: 1000px) {
