@@ -7,15 +7,15 @@ import { AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   // Obtengo el valor del scrollY y con eso trabajo los eventos con el menú y
   // el botón para volver hacia arriba de la página
-  const header = document.querySelector(".header");
-  const headerUl = document.querySelector(".header__ul");
-  const closeIcono = document.querySelector(".close__icono");
-  const seccionProyectos = document.querySelector(".portafolio");
-  const seccionSobreMi = document.querySelector(".sobremi");
-  const seccionContacto = document.querySelector(".contacto");
+  var header = document.querySelector(".header");
+  var headerUl = document.querySelector(".header__ul");
+  var closeIcono = document.querySelector(".close__icono");
+  var seccionProyectos = document.querySelector(".portafolio");
+  var seccionSobreMi = document.querySelector(".sobremi");
+  var seccionContacto = document.querySelector(".contacto");
 
   window.onscroll = function () {
-    const movimientoScrollY = window.scrollY;
+    var movimientoScrollY = window.scrollY;
     if (movimientoScrollY >= 5) {
       header.classList.add("fixed");
     } else {
