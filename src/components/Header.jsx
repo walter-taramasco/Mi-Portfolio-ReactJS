@@ -30,7 +30,7 @@ const Header = () => {
     <>
       <div className="header__div">
         <img
-          src="/logo.png"
+          src="/logo.webp"
           alt="logo Walter Taramasco"
           className="header__img"
         />
