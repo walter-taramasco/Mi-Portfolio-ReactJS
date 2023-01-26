@@ -13,12 +13,22 @@ import "./index.scss";
 const App = () => {
   return (
     <>
-      <Header />
+      <header className="header">
+        <Header />
+      </header>
       <div className="container">
-        <Home />
-        <Portfolio />
-        <AboutMe />
-        <Contact />
+        <section className="container__section inicio">
+          <Home />
+        </section>
+        <section className="container__section portafolio" id="proyectos">
+          <Portfolio />
+        </section>
+        <section className="container__section sobre-mi" id="sobre-mi">
+          <AboutMe />
+        </section>
+        <section className="container__section contacto" id="contacto">
+          <Contact />
+        </section>
       </div>
       <ButtonUp />
     </>

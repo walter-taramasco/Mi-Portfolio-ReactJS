@@ -4,15 +4,12 @@ import "./ButtonUp.scss";
 import { RxCaretUp } from "react-icons/rx";
 
 const ButtonUp = () => {
-  var botonUp = document.querySelector(".div__up");
-  var movimientoScrollY = window.scrollY;
-  window.onscroll = function () {
-    if (movimientoScrollY >= 5) {
-      botonUp.classList.add("visible");
-    } else {
-      botonUp.classList.remove("visible");
-    }
-  };
+  window.addEventListener("scroll", function () {
+    const divUp = document.querySelector(".div__up");
+
+    if (this.scrollY >= 80) divUp.classList.add("visible");
+    else divUp.classList.remove("visible");
+  });
   // Función para volver hacia arriba de la página
   function Up() {
     window.scrollTo({ top: 0, behavior: "smooth" });

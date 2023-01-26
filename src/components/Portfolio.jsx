@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Portfolio.scss";
 
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
@@ -46,28 +46,26 @@ const Proyecto = ({
 const Portfolio = () => {
   return (
     <>
-      <section className="container__section portafolio" id="proyectos">
-        <h4 className="portafolio__h4">PROYECTOS</h4>
-        <div className="portafolio__div proyecto">
-          <Proyecto
-            keyProyecto="Cabaña La Pitufina"
-            title="Cabaña La Pitufina"
-            srcImg="/assets/images/lapitufina.webp"
-            altImg="Imagén de la página web Cabaña La Pitufina"
-            tecnologias={["HTML", "CSS3", "Javascript"]}
-            linkPage="https://cabana-la-pitufina.netlify.app/"
-          />
-          <Proyecto
-            keyProyecto="To Do List"
-            title="To Do List"
-            srcImg="/assets/images/todolist.webp"
-            altImg="Imagén de la página web To Do List"
-            tecnologias={["HTML", "CSS3", "Javascript"]}
-            linkGithub="https://github.com/walter-taramasco/To-Do-List"
-            linkPage="https://todolist-by-walter.netlify.app/"
-          />
-        </div>
-      </section>
+      <h4 className="portafolio__h4">PROYECTOS</h4>
+      <div className="portafolio__div proyecto">
+        <Proyecto
+          keyProyecto="Cabaña La Pitufina"
+          title="Cabaña La Pitufina"
+          srcImg="/assets/images/lapitufina.webp"
+          altImg="Imagén de la página web Cabaña La Pitufina"
+          tecnologias={["HTML", "CSS3", "Javascript"]}
+          linkPage="https://cabana-la-pitufina.netlify.app/"
+        />
+        <Proyecto
+          keyProyecto="To Do List"
+          title="To Do List"
+          srcImg="/assets/images/todolist.webp"
+          altImg="Imagén de la página web To Do List"
+          tecnologias={["HTML", "CSS3", "Javascript"]}
+          linkGithub="https://github.com/walter-taramasco/To-Do-List"
+          linkPage="https://todolist-by-walter.netlify.app/"
+        />
+      </div>
     </>
   );
 };

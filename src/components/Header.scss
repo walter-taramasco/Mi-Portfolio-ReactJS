@@ -60,13 +60,13 @@
   }
 }
 
-.menu-abierto {
+.show-menu {
   left: 0 !important;
   transition: all 0.3s ease-in-out;
 }
 
-.menu-abierto-icono {
-  left: 80vw;
+.show-icono-close {
+  left: 85vw !important;
   transition: all 0.3s ease-in-out;
 }
 
