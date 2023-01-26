@@ -13,7 +13,7 @@ const Home = () => {
           alt="foto de Walter Taramasco"
         />
         <div className="texto__div botones">
-          <h3 className="texto__h3">Hola, mi nombre es</h3>
+          <p className="texto__p">Hola, mi nombre es</p>
           <h1 className="texto__h1">Walter Taramasco</h1>
           <h2 className="texto__h2">Desarrollador Frontend</h2>
           <div className="botones__div">

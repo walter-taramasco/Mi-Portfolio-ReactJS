@@ -35,29 +35,29 @@ const Header = () => {
           className="header__img"
         />
         <ul className={`header__ul ${navbarOpen ? " show-menu" : ""}`}>
-          <a href="#proyectos">
-            <li className="header__li" onClick={cerrarMenu}>
+          <li className="header__li">
+            <a href="#proyectos" onClick={cerrarMenu}>
               PROYECTOS
-            </li>
-          </a>
-          <a href="#sobre-mi">
-            <li className="header__li" onClick={cerrarMenu}>
+            </a>
+          </li>
+          <li className="header__li">
+            <a href="#sobre-mi" onClick={cerrarMenu}>
               SOBRE MÍ
-            </li>
-          </a>
-          <a href="#contacto">
-            <li className="header__li" onClick={cerrarMenu}>
+            </a>
+          </li>
+          <li className="header__li">
+            <a href="#contacto" onClick={cerrarMenu}>
               CONTACTO
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
-        <button className="header__button close">
+        <button className="header__button close" title="Cerrar Menú">
           <AiOutlineClose
             className={`close__icono ${navbarOpen ? " show-icono-close" : ""}`}
             onClick={handleToggle}
           />
         </button>
-        <button className="header__button open">
+        <button className="header__button open" title="Abrir Menú">
           <RiMenu3Line className="menu__icono" onClick={handleToggle} />
         </button>
       </div>

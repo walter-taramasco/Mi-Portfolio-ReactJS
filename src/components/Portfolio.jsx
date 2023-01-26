@@ -28,13 +28,23 @@ const Proyecto = ({
         </div>
         <div className="links__div">
           {linkGithub ? (
-            <a href={linkGithub} className="links__a" target="__blank">
+            <a
+              href={linkGithub}
+              className="links__a"
+              target="__blank"
+              aria-label="link para redireccionar hacia el repositorio del proyecto"
+            >
               <AiOutlineGithub />
             </a>
           ) : (
             false
           )}
-          <a href={linkPage} className="links__a" target="__blank">
+          <a
+            href={linkPage}
+            className="links__a"
+            target="__blank"
+            aria-label="link para redireccionar hacia la página del proyecto"
+          >
             <AiOutlineLink />
           </a>
         </div>
@@ -46,7 +56,7 @@ const Proyecto = ({
 const Portfolio = () => {
   return (
     <>
-      <h4 className="portafolio__h4">PROYECTOS</h4>
+      <h3 className="portafolio__h3">PROYECTOS</h3>
       <div className="portafolio__div proyecto">
         <Proyecto
           keyProyecto="Cabaña La Pitufina"

@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <>
       <div className="sobremi__div">
-        <h4 className="sobremi__h4">SOBRE MÍ</h4>
+        <h3 className="sobremi__h3">SOBRE MÍ</h3>
         <p className="sobremi__p">
           Soy autodidacta desde los 14 años, en ese momento me interese por el
           mundo de la programación, en especial la enfocada en el desarrollo

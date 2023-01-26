@@ -10,11 +10,13 @@ import {
 const Contact = () => {
   return (
     <>
-      <h4 className="contacto__h4">CONTACTO</h4>
+      <h3 className="contacto__h3">CONTACTO</h3>
       <div className="contacto__div">
         <a
           href="https://www.linkedin.com/in/walter-taramasco/"
           className="contacto__link"
+          target="_blank"
+          aria-label="Link que redirecciona hacia mi perfil de LinkedIn"
         >
           <AiOutlineLinkedin />
         </a>
@@ -22,6 +24,7 @@ const Contact = () => {
           href="https://github.com/walter-taramasco"
           className="contacto__link"
           target="_blank"
+          aria-label="Link que redirecciona hacia mi perfil de Github"
         >
           <AiOutlineGithub />
         </a>
@@ -29,6 +32,7 @@ const Contact = () => {
           href="mailto:contacto.walterweb@gmail.com"
           className="contacto__link"
           target="_blank"
+          aria-label="Link para enviarme un mail"
         >
           <AiOutlineMail />
         </a>
