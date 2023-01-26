@@ -20,7 +20,7 @@ const Home = () => {
             <a
               className="botones__a"
               download
-              href="/assets/docs/CV_Walter_Taramasco_Website.pdf"
+              href="/assets/docs/CV_Walter_Taramasco.pdf"
               title="Descarga el PDF"
             >
               Descarga mi CV <BiDownload className="botones__a--icon" />

@@ -13,7 +13,7 @@ const Contact = () => {
       <h4 className="contacto__h4">CONTACTO</h4>
       <div className="contacto__div">
         <a
-          href="https://www.linkedin.com/in/walter-taramasco-4048b0203/"
+          href="https://www.linkedin.com/in/walter-taramasco/"
           className="contacto__link"
         >
           <AiOutlineLinkedin />
