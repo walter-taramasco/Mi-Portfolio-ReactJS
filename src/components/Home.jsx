@@ -1,7 +1,7 @@
-import React from "react";
-import "./Home.scss";
+import React from 'react';
+import './Home.scss';
 
-import { BiDownload, BiMessageDots } from "react-icons/bi";
+import { BiDownload, BiMessageDots } from 'react-icons/bi';
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
         />
         <div className="texto__div botones">
           <p className="texto__p">Hola, mi nombre es</p>
-          <h1 className="texto__h1">Walter Taramasco</h1>
+          <h1 className="texto__h1">WALTER TARAMASCO</h1>
           <h2 className="texto__h2">Desarrollador Frontend</h2>
           <div className="botones__div">
             <a
@@ -30,7 +30,7 @@ const Home = () => {
               title="Contacta conmigo"
               href="#contacto"
             >
-              Contacta conmigo! <BiMessageDots className="botones__a--icon" />
+              ¡Contacta conmigo! <BiMessageDots className="botones__a--icon" />
             </a>
           </div>
         </div>

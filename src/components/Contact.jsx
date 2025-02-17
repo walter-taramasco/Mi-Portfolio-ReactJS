@@ -1,11 +1,11 @@
-import React from "react";
-import "./Contact.scss";
+import React from 'react';
+import './Contact.scss';
 
 import {
   AiOutlineGithub,
   AiOutlineMail,
   AiOutlineLinkedin,
-} from "react-icons/ai";
+} from 'react-icons/ai';
 
 const Contact = () => {
   return (
@@ -29,7 +29,7 @@ const Contact = () => {
           <AiOutlineGithub />
         </a>
         <a
-          href="mailto:contacto.walterweb@gmail.com"
+          href="mailto:waltertaramasco12@gmail.com"
           className="contacto__link"
           target="_blank"
           aria-label="Link para enviarme un mail"

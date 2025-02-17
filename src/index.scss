@@ -1,35 +1,43 @@
 @use "./scss/_layout.scss";
 
 /* Reset CSS */
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;500&family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-  --color-primario: #181818;
-  --color-secundario: #f0f0f0;
+  // Modo Claro por defecto
+  --azul-oscuro: #0a192f;
+  --turquesa: #64ffda;
+  --blanco: #f0f0f0;
+  --gris-claro: #e6f1ff;
 
-  --fondo-primario: #314175;
-  --fondo-secundario: #6889f7;
+  --fondo-pagina: var(--blanco);
+  --fondo-boton: (var(--turquesa));
 
-  --fuente-primaria: Hind, Helvetica, Arial, sans-serif;
-  --fuente-secundaria: Montserrat;
+  --color-titulo: var(--azul-oscuro);
+  --color-cuerpo: var(--azul-oscuro);
+  --color-boton: var(--azul-oscuro);
+
+  --fuente-titulo: "Space Mono";
+  --fuente-cuerpo: "Roboto Mono", Helvetica, Arial, sans-serif;
 }
 
 /* Modo Oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primario: #f0f0f0;
-    --color-secundario: #181818;
+    --fondo-pagina: var(--azul-oscuro);
+    --fondo-boton: var(--turquesa);
+    --color-boton: var(--azul-oscuro);
 
-    --fondo-primario: #6889f7;
-    --fondo-secundario: #314175;
+    --color-titulo: var(--blanco);
+    --color-cuerpo: var(--blanco);
   }
 }
 
 /* Si se activa el modo de alto contraste */
 @media (prefers-contrast: high) {
   :root {
-    --color-primario: black;
-    --color-secundario: white;
+    --color-titulo: white;
+    --color-cuerpo: black;
   }
 }
 
@@ -114,14 +122,14 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: "" l;
   content: none;
 }
 
 /* Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: var(--color-primario);
-  color: var(--color-secundario);
+  background-color: var(--color-cuerpo);
+  color: var(--fondo-pagina);
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
@@ -152,16 +160,15 @@ td {
 svg {
   width: 100%;
   display: block;
-  fill: currentColor;
 }
 
 /* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: var(--fuente-primaria);
-  color: var(--color-primario);
-  background-color: var(--fondo-secundario);
+  font-family: var(--fuente-cuerpo);
+  color: var(--color-cuerpo);
+  background-color: var(--fondo-pagina);
   /* Opcional */
   line-height: 1.4em;
   /* Opcional  hyphens: auto; */
@@ -171,4 +178,10 @@ body {
   -webkit-font-smoothing: antialiased;
   /* Opcional */
   -moz-osx-font-smoothing: grayscale;
+}
+
+.footer-p {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.8rem;
 }

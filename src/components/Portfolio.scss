@@ -1,9 +1,11 @@
 .portafolio {
   &__h3 {
+    color: var(--color-titulo);
     font-size: 1.3rem;
-    font-family: Montserrat;
+    font-weight: bold;
+    font-family: var(--fuente-titulo);
     text-align: center;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 2rem 0;
   }
   &__div {
     gap: 1.875rem;
@@ -12,18 +14,23 @@
 
 .proyecto {
   &__div {
-    padding: 1.25rem;
-    border: 0.0625rem solid var(--color-primario);
+    padding: 1.5rem;
+    border: 0.0625rem solid var(--color-cuerpo);
     border-radius: 0.4375rem;
     width: 100%;
     max-width: 25rem;
   }
+  &__h4 {
+    font-weight: bold;
+    font-family: var(--fuente-cuerpo);
+    font-size: 1.5rem;
+  }
   &__p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     margin: 0.6rem 0 0 0;
   }
   &__img {
-    border: 1px solid var(--color-primario);
+    border: 1px solid var(--color-titulo);
     border-radius: 0.125rem;
     width: 100%;
     height: 100%;
@@ -31,28 +38,40 @@
   }
 }
 
-.tecnologias__span {
-  font-size: 0.8rem;
-  background-color: var(--color-secundario);
-  padding: 0.0625rem 0.5625rem;
-  border-radius: 0.9375rem;
-  margin: 0.6rem 0.5rem 0 0;
+.tecnologias {
+  &__div {
+    margin: 1rem;
+    gap: 1rem;
+  }
+  &__span {
+    gap: 0.2rem;
+    font-size: 1rem;
+    background-color: var(--color-titulo);
+    color: var(--color-boton);
+    padding: 0.8rem 0.6rem;
+    border-radius: 0.25rem;
+    &-icon {
+      margin: 0.1rem 0 0 0;
+    }
+  }
 }
 
 .links {
   &__div {
     width: 100%;
     text-align: center;
+    margin: 1rem 0 0 0;
+    gap: 1rem;
   }
   &__a {
     width: 2.1875rem;
     height: 2.1875rem;
     font-size: 1.7rem;
-    background-color: var(--color-secundario);
-    border: 0.0625rem solid var(--color-primario);
+    color: var(--color-boton);
+    background-color: var(--color-titulo);
+    border: 0.0625rem solid var(--color-cuerpo);
     padding: 0.3125rem;
     border-radius: 100%;
-    margin: 0.6rem 0.7rem 0 0;
     transition: opacity 0.3s ease-in-out;
   }
   &__a:hover {
@@ -71,8 +90,8 @@
     font-size: 1.6rem;
   }
   .proyecto {
-    &__p {
-      margin: 1rem 0 0 0;
+    &__h4 {
+      margin: 0 0 1.5rem 0;
       font-size: 1.5rem;
     }
   }

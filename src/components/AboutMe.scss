@@ -2,12 +2,13 @@
 .sobremi {
   &__h3 {
     font-size: 1.3rem;
-    font-family: Montserrat;
-    margin: 0 0 1rem 0;
+    font-weight: bold;
+    font-family: var(--fuente-titulo);
+    margin: 0 0 2rem 0;
   }
   &__p {
     font-weight: 400;
-    margin: 0 0 0.4rem;
+    margin: 0 0 1.5rem 0;
   }
   &__span {
     font-weight: bold;

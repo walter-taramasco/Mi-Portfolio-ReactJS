@@ -1,22 +1,25 @@
-import React from "react";
+import React from 'react';
 
 /* Componentes */
-import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
-import Home from "./components/Home";
-import ButtonUp from "./components/ButtonUp";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';
+import Home from './components/Home';
+import ButtonUp from './components/ButtonUp';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import BackgroundCanvas from './components/BackgroundCanvas';
 
-import "./index.scss";
+import './index.scss';
 
 const App = () => {
   return (
     <>
+      <BackgroundCanvas />
       <header className="header">
         <Header />
       </header>
       <div className="container">
+        <canvas id="background"></canvas>
         <section className="container__section inicio">
           <Home />
         </section>
@@ -31,6 +34,7 @@ const App = () => {
         </section>
       </div>
       <ButtonUp />
+      <p className="footer-p">Hecho con ❤️ - Walter Taramasco</p>
     </>
   );
 };

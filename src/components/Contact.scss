@@ -1,18 +1,19 @@
 .contacto {
   &__h3 {
     text-align: center;
-    margin: 0 0 1rem 0;
-    font-family: Montserrat;
+    margin: 0 0 1.5rem 0;
+    font-weight: bold;
+    font-family: var(--fuente-titulo);
     font-size: 1.3rem;
   }
   &__link {
     width: 2.1875rem;
     height: 2.1875rem;
     font-size: 1.7rem;
-    background-color: var(--color-secundario);
-    border: 0.0625rem solid var(--color-primario);
+    background-color: var(--fondo-boton);
+    color: var(--color-boton);
     border-radius: 100%;
-    margin: 0 0 0 0.6rem;
+    margin: 0 1rem 0 0;
     padding: 0.3125rem;
     transition: opacity 0.3s ease-in-out;
   }
