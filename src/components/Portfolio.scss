@@ -46,7 +46,7 @@
   &__span {
     gap: 0.2rem;
     font-size: 1rem;
-    background-color: var(--color-titulo);
+    background-color: var(--fondo-boton);
     color: var(--color-boton);
     padding: 0.8rem 0.6rem;
     border-radius: 0.25rem;
@@ -68,8 +68,7 @@
     height: 2.1875rem;
     font-size: 1.7rem;
     color: var(--color-boton);
-    background-color: var(--color-titulo);
-    border: 0.0625rem solid var(--color-cuerpo);
+    background-color: var(--fondo-boton);
     padding: 0.3125rem;
     border-radius: 100%;
     transition: opacity 0.3s ease-in-out;

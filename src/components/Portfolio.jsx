@@ -76,7 +76,7 @@ const Portfolio = () => {
               icon: <FaHtml5 className="tecnologias__span-icon" />,
             },
             {
-              name: "CSS3",
+              name: "CSS",
               icon: <FaCss3Alt className="tecnologias__span-icon" />,
             },
             {
